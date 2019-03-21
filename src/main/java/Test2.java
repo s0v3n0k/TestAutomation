@@ -24,6 +24,13 @@ public class Test2 {
 
         jsExecutor.executeScript("window.scrollTo(0, document.body.clientHeight)", "");
 
+        chromeDriver.findElement(By.xpath("//*[@class='b_searchbox']")).sendKeys("automatio");
+
+        jsExecutor.executeScript("window.scrollTo({ top: 0, behaviour: 'smooth'})");
+
+        wait.until(ExpectedConditions.presenceOfElementLocated(By.xpath("//li[@class='sa_sg']")));
+        chromeDriver.findElement(By.xpath("//li[@class='sa_sg']")).click();
+
 //        chromeDriver.quit();
     }
 
