@@ -22,6 +22,8 @@ public class Test2 {
 
         jsExecutor.executeScript("window.scrollTo(0, document.body.clientHeight)", "");
 
+        jsExecutor.executeScript("window.scrollTo(0, document.body.clientHeight)", "");
+
 //        chromeDriver.quit();
     }
 
