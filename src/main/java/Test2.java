@@ -7,7 +7,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Test2 {
 
     public static void main(String[] args) {
-        System.setProperty("webdriver.chrome.driver", "/home/john/Downloads/Autotests/chromedriver");
+        System.setProperty("webdriver.chrome.driver", "/home/john/Downloads/Autotests");
         ChromeDriver chromeDriver = new ChromeDriver();
         JavascriptExecutor jsExecutor = (JavascriptExecutor) chromeDriver;
         WebDriverWait wait = new WebDriverWait(chromeDriver, 5);
